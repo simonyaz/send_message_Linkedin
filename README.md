@@ -23,3 +23,7 @@ Nessa especificação é acessada a página web do Linkedin e feito o login e ve
 Esse teste considera que é a primeira mensagem que está sendo enviada para o usuário selecionado.
 
 A especificação de teste **send_message_linkedin.spec.js** é uma tentativa de testar ao mesmo tempo tanto a primeira mensagem enviada para o usuario quanto as demais mensagens. <Código ainda não funciona completamente>
+
+O vídeo da execução dos testes está disponível em
+
+![image](https://user-images.githubusercontent.com/69819910/90889943-699dd000-e38f-11ea-976c-93b7c9839dff.png)
