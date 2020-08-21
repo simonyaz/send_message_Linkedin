@@ -21,3 +21,5 @@ Considerar a especificação de teste **send_first_message_linkedin.spec.js** pa
 Nessa especificação é acessada a página web do Linkedin e feito o login e verificado o seu sucesso. Logo após é acessada a aba Mensagem, localizando o usuário Simony de Almeida Azevedo para o envio de uma mensagem.
 
 Esse teste considera que é a primeira mensagem que está sendo enviada para o usuário selecionado.
+
+A especificação de teste **send_message_linkedin.spec.js** é uma tentativa de testar ao mesmo tempo tanto a primeira mensagem enviada para o usuario quanto as demais mensagens. <Código ainda não funciona completamente>
