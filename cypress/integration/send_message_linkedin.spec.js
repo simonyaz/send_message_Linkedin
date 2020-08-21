@@ -29,8 +29,13 @@ describe("Sending a message", () => {
 
         cy.get('body').then($body => {
             //If is the first message
-            if ($body.text().includes('.msg-connections-typeahead__top-fixed-section > .scrollable')) {
-                // cy.url()
+            if ($body.text().includes('Simony')) {
+                cy.get('.msg-form__contenteditable')
+                .type('Apenas uma mensagem de teste :)')
+                .should('contain', 'Apenas uma mensagem de teste :)')
+            
+            } else { //If already had another message
+                 // cy.url()
                 // .should('eq', 'https://www.linkedin.com/messaging/thread/new/')
                 //Filling Name field and pressing Enter
                 cy.get('.msg-connections-typeahead__top-fixed-section > .scrollable')
@@ -47,11 +52,6 @@ describe("Sending a message", () => {
                 cy.get('.msg-form__contenteditable')
                 .type('Apenas uma mensagem de teste :)')
                 .should('contain', 'Apenas uma mensagem de teste :)')   
-            
-            } else { //If already had another message
-                cy.get('.msg-form__contenteditable')
-                .type('Apenas uma mensagem de teste :)')
-                .should('contain', 'Apenas uma mensagem de teste :)')
             }
        
         })

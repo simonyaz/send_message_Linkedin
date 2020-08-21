@@ -49,8 +49,6 @@ describe("Sending a message", () => {
 
         //Pressing Send button
         cy.get('.msg-form__send-button').click()
-
-       // cy.contains('Sair').click()
         
 
 
